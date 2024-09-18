@@ -1,0 +1,18 @@
+@import url("./core.css");
+
+.button {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}

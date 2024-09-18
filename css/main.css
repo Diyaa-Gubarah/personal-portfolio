@@ -1,6 +1,13 @@
-@import url("./reset.css");
-@import url("./style-guide.css");
+/* main.css */
 
-@import url("./navigation.css");
+@import url("./core.css");
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./responsive.css");
+@import url("./components.css");
 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -1,5 +1,4 @@
-@import url("./reset.css");
-
+/* core.css */
 :root {
   /* Font Variables */
   --heading-font: "Poppins", sans-serif;
@@ -19,6 +18,7 @@
   --spacing-lg: 1.85rem;
 
   /* Font Sizes */
+  --font-size-xs: clamp(0.5rem, 0.5vw + 0.5rem, 0.75rem);
   --font-size-sm: clamp(0.75rem, 1vw + 0.5rem, 1rem);
   --font-size-md: clamp(1rem, 1.5vw + 0.75rem, 1.25rem);
   --font-size-lg: clamp(1.25rem, 2vw + 1rem, 1.75rem);
@@ -34,7 +34,7 @@ body {
   font-family: "Lora", serif;
   background-color: var(--background-color);
   font-size: var(--font-size-md);
-  /* line-height: 1.6; */
+  line-height: 1.5;
 }
 
 /* Title */
@@ -84,62 +84,6 @@ body {
   padding: var(--spacing-lg);
 }
 
-/* Components */
-
-/* Header */
-.header {
-  grid-area: header;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.social-sharing {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-sm);
-  margin: var(--spacing-xs) 0;
-}
-
-
-
-.quotes {
-  font-style: italic;
-  border-left: 4px solid var(--primary-color);
-  padding-left: var(--spacing-sm);
-  margin-bottom: var(--spacing-md);
-  font-size: var(--font-size-md);
-  color: var(--text-color-dark);
-}
-
-/* Button */
-.button {
-  background-color: var(--secondary-color);
-  color: var(--background-color);
-  padding: var(--spacing-xs) var(--spacing-md);
-  border: none;
-  cursor: pointer;
-  border-radius: var(--border-radius);
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-}
-
-.button:hover {
-  background-color: var(--primary-color);
-  color: var(--background-color);
-}
-
-/* Link Styles */
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 /* Bottom Border */
 .underline {
   padding-bottom: var(--spacing-lg);
@@ -174,22 +118,57 @@ img {
   object-position: center;
 }
 
+/* Link Styles */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Quotes */
+.quotes {
+  font-style: italic;
+  border-left: 4px solid var(--primary-color);
+  padding-left: var(--spacing-sm);
+  font-size: var(--font-size-md);
+  color: var(--text-color-dark);
+}
+
+p b {
+  font-weight: bold;
+}
+
+p em {
+  font-style: italic;
+}
+
+p u {
+  text-decoration: underline;
+}
+
+
+blockquote {
+  border-left: 4px solid var(--accent-color);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: var(--text-color-dark);
+}
+
+figcaption {
+  font-size: var(--font-size-xs);
+  color: var(--text-color-light);
+  text-align: center;
+  margin-top: var(--spacing-xs);
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: var(--spacing-lg);
   background-color: var(--secondary-color);
   color: var(--background-color);
-}
-
-/* Media Queries */
-@media (max-width: 600px) {
-  .thumbnail-xs {
-    width: 50px;
-    height: 50px;
-  }
-
-  .logo {
-    width: 60px;
-    height: 30px;
-  }
 }
