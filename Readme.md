@@ -8,7 +8,7 @@ This project is a simple blog built using HTML and CSS. It includes a homepage d
 
 ### Homepage Layout
 
-![Homepage Layout](./assets/design.png)
+![Blog Layout Design Inspiration](./assets/design.png)
 
 
 ## Features
