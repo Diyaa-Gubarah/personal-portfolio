@@ -6,7 +6,7 @@ This project is a simple blog built using HTML and CSS. It includes a homepage d
 
 ## Design Preview
 
-### Homepage Layout
+### Design Inspiration
 
 ![Blog Layout Design Inspiration](./assets/design.png)
 
