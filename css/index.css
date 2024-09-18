@@ -1,4 +1,4 @@
-@import url("./style-guide.css");
+@import url("./main.css");
 
 .layout {
   display: grid;
@@ -12,13 +12,7 @@
   grid-gap: var(--spacing-lg);
 }
 
-/* Header */
-.header {
-  grid-area: header;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 
 /* Bio */
 .bio {

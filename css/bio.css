@@ -6,33 +6,24 @@
   grid-template-rows: auto auto auto auto;
   grid-template-areas:
     "header"
-    "blog-image"
-    "author"
-    "blog-content";
+    "bio"
+    "blog-list"
+    "footer";
 
   grid-gap: var(--spacing-sm);
 }
 
-/* Blog Image */
-.blog-image {
-  grid-area: blog-image;
-}
-
-/* Author */
-.author {
-  grid-area: author;
-
+/* Bio */
+.bio {
+  grid-area: bio;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: var(--spacing-md);
 }
 
-.author-bio {
+.bio-content {
   display: flex;
   flex-direction: column;
-}
-
-/* Blog Content */
-.blog-content {
-  grid-area: blog-content;
+  gap:var(--spacing-xs);
 }
