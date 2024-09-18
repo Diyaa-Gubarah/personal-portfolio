@@ -4,9 +4,8 @@
 
 This project is a simple blog built using HTML and CSS. It includes a homepage displaying a list of blog posts and individual blog post pages. The design features a clean and modern layout with images and styled typography.
 
-## Design Preview
+## Design Inspiration
 
-### Design Inspiration
 
 ![Blog Layout Design Inspiration](./assets/design.png)
 
