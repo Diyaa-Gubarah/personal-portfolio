@@ -1,0 +1,177 @@
+@import url("./reset.css");
+
+:root {
+  /* Font Variables */
+  --heading-font: "Poppins", sans-serif;
+  --subheading-font: "Lora", serif;
+
+  /* Color Variables */
+  --background-color: #ffffff;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --text-color-dark: #343a40;
+  --text-color-light: #adb5bd;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 1.85rem;
+
+  /* Font Sizes */
+  --font-size-sm: clamp(0.75rem, 1vw + 0.5rem, 1rem);
+  --font-size-md: clamp(1rem, 1.5vw + 0.75rem, 1.25rem);
+  --font-size-lg: clamp(1.25rem, 2vw + 1rem, 1.75rem);
+  --font-size-xl: clamp(1.5rem, 2.5vw + 1.25rem, 2.25rem);
+  --font-size-xxl: clamp(1.75rem, 3vw + 1.5rem, 2.75rem);
+
+  /* Border Radius */
+  --border-radius: 8px;
+}
+
+/* Global Styles */
+body {
+  font-family: "Lora", serif;
+  background-color: var(--background-color);
+  font-size: var(--font-size-md);
+  /* line-height: 1.6; */
+}
+
+/* Title */
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--text-color-dark);
+}
+
+/* Subtitle */
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  color: var(--text-color-dark);
+}
+
+/* Paragraph */
+.paragraph {
+  font-family: "Lora", serif;
+  font-size: var(--font-size-md);
+  color: var(--text-color-dark);
+}
+
+/* Meta Text (Date, Author, Time) */
+.meta-text {
+  font-family: "Lora", serif;
+  font-size: var(--font-size-sm);
+  color: var(--text-color-light);
+}
+
+/* Utility Classes */
+.padding-xs {
+  padding: var(--spacing-xs);
+}
+
+.padding-sm {
+  padding: var(--spacing-sm);
+}
+
+.padding-md {
+  padding: var(--spacing-md);
+}
+
+.padding-lg {
+  padding: var(--spacing-lg);
+}
+
+/* Components */
+.quotes {
+  font-style: italic;
+  border-left: 4px solid var(--primary-color);
+  padding-left: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-md);
+  color: var(--text-color-dark);
+}
+
+/* Button */
+.button {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+/* Link Styles */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Bottom Border */
+.underline {
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--text-color-light);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-sm);
+}
+
+/* Images & Thumbnails */
+img {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail-xs {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
+}
+
+footer {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .thumbnail-xs {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 30px;
+  }
+}
